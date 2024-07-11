@@ -18,7 +18,7 @@
 
       <SwapLink :isClassicHeader="isClassicHeader" />
 
-      <BlastButton />
+      <!-- <BlastButton /> -->
     </nav>
 
     <div class="user-actions">

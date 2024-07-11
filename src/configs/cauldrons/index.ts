@@ -7,7 +7,7 @@ import optimismCauldrons from "@/configs/cauldrons/optimismCauldrons";
 import kavaCauldrons from "@/configs/cauldrons/kavaCauldrons";
 import beraBartioCauldrons from "@/configs/cauldrons/beraBartioCauldrons";
 import blastCauldrons from "@/configs/cauldrons/blastCauldrons";
-
+import scalarCauldrons from "@/configs/cauldrons/scalarCauldrons";
 export default [
   ...ethereumCauldrons,
   ...fantomCauldrons,
@@ -18,4 +18,5 @@ export default [
   ...kavaCauldrons,
   ...beraBartioCauldrons,
   ...blastCauldrons,
+  ...scalarCauldrons,
 ];

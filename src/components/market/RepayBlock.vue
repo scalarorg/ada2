@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="row">
-      <h3 class="title">Repay MIM</h3>
+      <h3 class="title">Repay SCL</h3>
 
       <Toggle
         v-if="isDeleverageAllowed"
@@ -11,7 +11,7 @@
       />
     </div>
 
-    <h4 class="subtitle">Select the amount of MIM to Repay</h4>
+    <h4 class="subtitle">Select the amount of SCL to Repay</h4>
   </div>
   <BaseTokenInput
     :value="inputValue"

@@ -11,3 +11,5 @@ export const RPC_KAVA = "https://evm.kava.io";
 export const PRC_LINEA = "https://rpc.linea.build";
 export const RPC_BERA_BARTIO = "https://bartio.rpc.berachain.com/";
 export const RPC_BLAST = "https://rpc.blast.io";
+export const RPC_SEPOLIA =
+  "https://eth-sepolia.g.alchemy.com/v2/nNbspp-yjKP9GtAcdKi8xcLnBTptR2Zx";

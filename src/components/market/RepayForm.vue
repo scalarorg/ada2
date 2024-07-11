@@ -231,7 +231,7 @@ export default {
       const { useDeleverage } = this.actionConfig;
       const { name } = this.cauldron.config.collateralInfo;
       return useDeleverage
-        ? "Choose the amount of MIM you want to repay"
+        ? "Choose the amount of SCL you want to repay"
         : `Select the amount of ${name} to withdraw from the Cauldron`;
     },
 

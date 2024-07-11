@@ -1,6 +1,7 @@
 import { BigNumber } from "ethers";
 import type { Address } from "viem";
 import lensAbi from "@/abis/marketLens.js";
+import myLensAbi from "@/abis/scalarMarketLens.js";
 import type { MainParams } from "@/helpers/cauldron/types";
 import { getPublicClient } from "@/helpers/chains/getChainsInfo";
 import { getLensAddress } from "@/helpers/cauldron/getLensAddress";
@@ -49,7 +50,7 @@ export const getMainParams = async (
 
       return {
         address: lensAddress,
-        abi: lensAbi,
+        abi: chainId === 11155111 ? myLensAbi : lensAbi,
         functionName: methodName,
         args: [config.contract.address],
       };
@@ -65,7 +66,7 @@ export const getMainParams = async (
 
   return marketInfo.map(({ result }: MarketInfoResponse, index: number) => {
     const localInterest: number | undefined = configs[index].interest;
-
+    // console.log("localInterest", localInterest);
     const updatePrice = contractExchangeRate
       ? !BigNumber.from(contractExchangeRate).eq(result.oracleExchangeRate)
       : false;

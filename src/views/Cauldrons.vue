@@ -13,13 +13,14 @@
               src="@/assets/images/PixelMIM.svg"
               alt="Mim icon"
             />
-            MIM a leading decentralised and collateral-backed stablecoin.
+            Scalar Coin a leading decentralised and collateral-backed
+            stablecoin.
           </h4>
         </div>
 
         <ArbitrumBlock />
-
-        <CauldronsCarousel />
+        <!-- TODO -->
+        <!-- <CauldronsCarousel /> -->
 
         <CauldronsTable
           :cauldrons="cauldrons"

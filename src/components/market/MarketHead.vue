@@ -38,7 +38,7 @@
       <div class="info-wrap group-wrap">
         <InfoButton
           title="TMB"
-          tooltip="Total MIM Borrowed."
+          tooltip="Total SCL Borrowed."
           :value="totalMimBorrowed"
         />
         <InfoButton

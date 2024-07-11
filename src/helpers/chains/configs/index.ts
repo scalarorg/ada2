@@ -11,7 +11,7 @@ import { mainnetConfig } from "@/helpers/chains/configs/mainnet";
 import { moonriverConfig } from "@/helpers/chains/configs/moonriver";
 import { optimismConfig } from "@/helpers/chains/configs/optimism";
 import { polygonConfig } from "@/helpers/chains/configs/polygon";
-
+import { sepoliaConfig } from "@/helpers/chains/configs/sepolia";
 export const chainsConfigs = [
   mainnetConfig,
   arbitrumConfig,
@@ -26,4 +26,5 @@ export const chainsConfigs = [
   baseConfig,
   lineaConfig,
   beraBartioConfig,
+  sepoliaConfig,
 ];
