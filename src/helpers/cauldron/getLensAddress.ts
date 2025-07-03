@@ -2,7 +2,7 @@ export const getLensAddress = (chainId: Number): string => {
   // check type
   switch (Number(chainId)) {
     case 11155111:
-      return "0x91d25b4e4838Fc02A66ad0A5831149C72BA15516";
+      return "0xeD675260460A592B7cbea09a08520CdFE3aB23fD";
     case 80084:
       return "0x1E217d3cA2a19f2cB0F9f12a65b40f335286758E";
     default:

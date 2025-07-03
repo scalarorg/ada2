@@ -7,7 +7,7 @@ const mimInfo = {
   name: "SCL",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
-  address: "0xB5065Df90c390a7c5318f822b0Fa96Cde2f33051",
+  address: "0xbF8c55fa09aec6097ccE1fe3D070A23F0f74F5B1",
   abi: tokensAbi.SCL,
 };
 
@@ -38,13 +38,13 @@ const config: Array<CauldronConfig> = [
     },
     contract: {
       name: "CauldronV4",
-      address: "0x1e18a44a86c79bEB9153B2A6566f6c4D05D48f12",
+      address: "0xc39f8C845452423b4C77c106b0fF057507c41def",
       abi: poolsAbi.scalarCauldronV4,
     },
     collateralInfo: {
       name: "sBTC",
       decimals: 18,
-      address: "0xa32e5903815476Aff6E784F5644b1E0e3eE2081B",
+      address: "0xcbC3B6F28Ea17bcce8ab4F39a75D51658A8f3c24",
       abi: tokensAbi.sBTC,
     },
     mimInfo,

@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from "node:url";
 import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 
-import devNodePolyfills from "vite-plugin-node-polyfills";
+import { nodePolyfills as devNodePolyfills } from "vite-plugin-node-polyfills";
 import nodePolyfills from "rollup-plugin-polyfill-node";
 
 // https://vitejs.dev/config/
@@ -19,7 +19,7 @@ export default defineConfig(({ command, mode }) => {
         env.KV_REST_API_READ_ONLY_TOKEN,
     },
     plugins: [
-      devNodePolyfills.nodePolyfills({
+      devNodePolyfills({
         // Whether to polyfill `node:` protocol imports.
         protocolImports: true,
       }),
