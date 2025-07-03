@@ -40,12 +40,12 @@
         alt=""
       />
       <h4 class="item-title">
-        SCL to Repay
+        sUSD to Repay
         <TooltipIcon
           :width="20"
           :height="20"
           fill="#878B93"
-          tooltip="Amount of SCL minted from the cauldron."
+          tooltip="Amount of sUSD minted from the cauldron."
         />
       </h4>
       <p class="item-value">
