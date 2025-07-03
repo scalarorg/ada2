@@ -59,9 +59,9 @@ export const getMainParams = async (
 
   const contractExchangeRate: bigint | null = cauldron
     ? await publicClient.readContract({
-        ...cauldron,
-        functionName: "exchangeRate",
-      })
+      ...cauldron,
+      functionName: "exchangeRate",
+    })
     : null;
 
   return marketInfo.map(({ result }: MarketInfoResponse, index: number) => {

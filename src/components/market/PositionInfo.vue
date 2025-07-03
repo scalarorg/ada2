@@ -147,7 +147,9 @@ export default {
   },
   computed: {
     collateralDecimals(): number {
-      return this.cauldron.config.collateralInfo.decimals;
+      const result = this.cauldron.config.collateralInfo.decimals;
+      console.log({result})
+      return result
     },
 
     expectedPosition(): ExpectedPosition {
