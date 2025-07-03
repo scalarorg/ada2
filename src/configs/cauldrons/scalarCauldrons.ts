@@ -3,11 +3,12 @@ import tokensAbi from "@/abis/tokensAbi/index";
 import { useImage } from "@/helpers/useImage";
 
 import type { CauldronConfig } from "@/configs/cauldrons/configTypes";
+import { sepoliaAddresses } from "../addresses/sepolia";
 const mimInfo = {
   name: "sUSD",
   icon: useImage(`assets/images/tokens/MIM.png`),
   decimals: 18,
-  address: "0xbF8c55fa09aec6097ccE1fe3D070A23F0f74F5B1",
+  address: sepoliaAddresses.stableCoin,
   abi: tokensAbi.stableCoin,
 };
 
@@ -38,13 +39,13 @@ const config: Array<CauldronConfig> = [
     },
     contract: {
       name: "CauldronV4",
-      address: "0xc39f8C845452423b4C77c106b0fF057507c41def",
+      address: sepoliaAddresses.market,
       abi: poolsAbi.scalarCauldronV4,
     },
     collateralInfo: {
       name: "sBTC",
       decimals: 18,
-      address: "0xcbC3B6F28Ea17bcce8ab4F39a75D51658A8f3c24",
+      address: sepoliaAddresses.sbtc,
       abi: tokensAbi.sBTC,
     },
     mimInfo,
