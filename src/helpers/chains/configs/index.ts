@@ -13,6 +13,7 @@ import { optimismConfig } from "@/helpers/chains/configs/optimism";
 import { polygonConfig } from "@/helpers/chains/configs/polygon";
 import { sepoliaConfig } from "@/helpers/chains/configs/sepolia";
 export const chainsConfigs = [
+  sepoliaConfig,
   mainnetConfig,
   arbitrumConfig,
   blastConfig,
@@ -26,5 +27,4 @@ export const chainsConfigs = [
   baseConfig,
   lineaConfig,
   beraBartioConfig,
-  sepoliaConfig,
 ];

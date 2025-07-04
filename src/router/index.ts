@@ -19,12 +19,12 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import("@/views/Cauldrons.vue"),
   },
   {
-    path: "/cauldrons",
-    name: "Cauldrons",
+    path: "/markets",
+    name: "Markets",
     component: () => import("@/views/Cauldrons.vue"),
   },
   {
-    path: "/market/:chainId/:cauldronId",
+    path: "/markets/:chainId/:cauldronId",
     name: "Market",
     component: () => import("@/views/Market.vue"),
   },

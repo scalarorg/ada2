@@ -1,8 +1,5 @@
 <template>
-  <router-link
-    :class="['pools-table-link', poolLabel, { open: isOpenPosition }]"
-    :to="goToPage"
-  >
+  <router-link :class="['pools-table-link', poolLabel, { open: isOpenPosition }]" :to="goToPage">
     <div class="label">{{ poolLabel }}</div>
     <div class="column">
       <div class="pool-info">
@@ -138,7 +135,7 @@ export default {
 }
 
 .open {
-  background: url("@/assets/images/cauldrons/table-item-background.png");
+  background: #fff;
 }
 
 .label {

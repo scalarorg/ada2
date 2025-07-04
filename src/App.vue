@@ -1,16 +1,16 @@
 <template>
   <AppHeader />
   <div class="router-wrap" :style="pageBackground" v-if="checkInProcess">
-    <img
+    <!-- <img
       class="mim-top-bg"
       src="@/assets/images/main-mim-top-bg.png"
       alt="Mim"
-    />
-    <img
+    /> -->
+    <!-- <img
       class="mim-bottom-bg"
       src="@/assets/images/main-mim-bottom-bg.png"
       alt="Mim"
-    />
+    /> -->
     <LiquidityLaunchEventBanner />
     <MlpMigrationBanner />
     <router-view />
@@ -71,30 +71,30 @@ export default {
   },
 
   async beforeCreate() {
-    
-// try {
-//     const location = await axios.get(
-//       `https://ipwhois.pro/?key=${
-//         import.meta.env.VITE_APP_IPWHOIS_API_KEY
-//       }&security=1`
-//     );
 
-//     if (!location.data.success)
-//       throw new Error(
-//         `Location fetching unsuccessful: ${location.data.message}`
-//       );
+    // try {
+    //     const location = await axios.get(
+    //       `https://ipwhois.pro/?key=${
+    //         import.meta.env.VITE_APP_IPWHOIS_API_KEY
+    //       }&security=1`
+    //     );
 
-//     const isVPN = location.data.security?.vpn;
+    //     if (!location.data.success)
+    //       throw new Error(
+    //         `Location fetching unsuccessful: ${location.data.message}`
+    //       );
 
-//     if (
-//       this.country.includes(location.data.country) ||
-//       this.region.includes(location.data.region) ||
-//       isVPN
-//     )
-//       document.location.href = "https://abracadabra.money/location";
-//   } catch (error) {
-//     console.log("VPN", error);
-//   }
+    //     const isVPN = location.data.security?.vpn;
+
+    //     if (
+    //       this.country.includes(location.data.country) ||
+    //       this.region.includes(location.data.region) ||
+    //       isVPN
+    //     )
+    //       document.location.href = "https://abracadabra.money/location";
+    //   } catch (error) {
+    //     console.log("VPN", error);
+    //   }
   },
 
   components: {

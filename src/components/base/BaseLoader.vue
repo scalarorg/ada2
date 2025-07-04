@@ -4,7 +4,7 @@
   </div>
 
   <div :class="['spinner', { small }, { medium }, { large }]" v-else>
-    <img src="@/assets/images/cauldrons/loader.gif" alt="Loader icon" />
+    <!-- <img src="@/assets/images/PixelScalar.svg" alt="Loader icon" /> -->
     <span class="spinner-text" v-if="text"> {{ text }}</span>
   </div>
 </template>
@@ -58,6 +58,7 @@ export default {
   border-radius: 4px;
   background: var(--loader-color);
 }
+
 .loader:before,
 .loader:after {
   position: absolute;
@@ -67,10 +68,12 @@ export default {
   content: "";
   background: var(--loader-color);
 }
+
 .loader:before {
   left: -10px;
   animation: rectangle infinite 1s ease-in-out -0.4s;
 }
+
 .loader:after {
   right: -10px;
   animation: rectangle infinite 1s ease-in-out;
@@ -107,11 +110,13 @@ export default {
 }
 
 @keyframes rectangle {
+
   0%,
   80%,
   100% {
     height: 6px;
   }
+
   40% {
     height: 8px;
   }

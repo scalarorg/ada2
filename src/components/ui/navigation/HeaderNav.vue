@@ -1,5 +1,5 @@
 <template>
-  <HeaderLink to="Cauldrons">Cauldrons</HeaderLink>
+  <HeaderLink to="Markets">Markets</HeaderLink>
 
   <HeaderStakeDropdown />
 

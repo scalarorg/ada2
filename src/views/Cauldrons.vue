@@ -10,10 +10,10 @@
           <h4 class="subtitle">
             <img
               class="mim-icon"
-              src="@/assets/images/PixelMIM.svg"
-              alt="Mim icon"
+              src="@/assets/images/PixelScalar.svg"
+              alt="sUSD icon"
             />
-            Scalar Coin a leading decentralised and collateral-backed
+            Scalar USD a leading decentralised and collateral-backed
             stablecoin.
           </h4>
         </div>

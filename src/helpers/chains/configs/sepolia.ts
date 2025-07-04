@@ -30,9 +30,9 @@ export const sepoliaConfig = {
   chainId: sepolia.id,
   chainName: "Sepolia",
   symbol: "ETH",
-  icon: useImage("assets/images/networks/ethereum-icon.svg"),
+  icon: useImage("assets/images/networks/sepolia.png"),
   baseTokenIcon: useImage("assets/images/tokens/ETH.png"),
   baseTokenSymbol: "ETH",
-  networkIcon: useImage(`assets/images/networks/ethereum.svg`),
+  networkIcon: useImage(`assets/images/networks/sepolia.png`),
   lzChainId: 161,
 };

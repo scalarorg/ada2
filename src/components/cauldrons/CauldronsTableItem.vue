@@ -1,18 +1,11 @@
 <template>
-  <router-link
-    :class="['cauldrons-table-link', cauldronLabel, { open: isOpenPosition }]"
-    :to="goToMarket(cauldron)"
-  >
+  <router-link :class="['cauldrons-table-link', cauldronLabel, { open: isOpenPosition }]" :to="goToMarket(cauldron)">
     <div class="label">{{ cauldronLabel }}</div>
     <div class="column">
       <div class="cauldron-info">
         <div class="icons-wrap">
           <img class="cauldron-icon" :src="cauldron.config.icon" alt="" />
-          <img
-            class="chain-icon"
-            :src="getChainIcon(cauldron.config.chainId)"
-            alt=""
-          />
+          <img class="chain-icon" :src="getChainIcon(cauldron.config.chainId)" alt="" />
         </div>
         {{ cauldron.config.name }}
       </div>

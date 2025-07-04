@@ -2,12 +2,7 @@
   <div class="popup">
     <div class="popup-top">
       <h3 class="popup-title">Route Optimisation</h3>
-      <img
-        class="popup-close"
-        @click="closePopup"
-        src="@/assets/images/close-popup.svg"
-        alt="close"
-      />
+      <img class="popup-close" @click="closePopup" src="@/assets/images/close-popup.svg" alt="close" />
     </div>
 
     <div class="loader-wrap" v-if="!routeDatas.length">
@@ -20,12 +15,8 @@
         <p class="header-title">Fees</p>
         <p class="header-title">{{ amountTitle }}</p>
       </div>
-      <div
-        class="list-item"
-        v-for="(item, idx) of routeDatas"
-        :key="item.address"
-        :class="{ accent: (itsDeleverage && idx === 0) || !itsDeleverage }"
-      >
+      <div class="list-item" v-for="(item, idx) of routeDatas" :key="item.address"
+        :class="{ accent: (itsDeleverage && idx === 0) || !itsDeleverage }">
         <div class="token-icon">
           <BaseTokenIcon :icon="item.icon" />
           <p>{{ item.name }}</p>
@@ -182,7 +173,7 @@ export default {
   background-size: cover;
 
   &.accent {
-    background-image: url("@/assets/images/cauldrons/table-item-background.png");
+    background-image: #fff;
   }
 }
 
