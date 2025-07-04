@@ -1,6 +1,6 @@
 export const sepoliaAddresses: Record<string, `0x${string}`> = {
-    "stableCoin": "0x51310a2BD63b854b42af430aCFe8fbC9a39e5390",
-    "sbtc": "0x33c86B01C41E9d0E16861ee7ef0DF43564Fc3ba2",
-    "lens": "0x71BAc1e58F2E33Bcd926C099af4B435fE7cC420D",
-    "market": "0x071dB87C9F3A3aB375beF38668Fb3B5b8f8EAa49",
+    "stableCoin": "0x4eB9BeA4ba5E18c9dbca58f320916c4740C9abD1",
+    "sbtc": "0x3806E25A0ea6e312A47E2CeE5518436F41be836b",
+    "lens": "0xB1b6894c7fF9B7cfd93F3285B2f91Ab44cd941eD",
+    "market": "0x0Eb23d1C99378388F9f6f1Efd811856a217f94DD",
 }
